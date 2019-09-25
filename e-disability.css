@@ -4,3 +4,8 @@ body{
   background-size: cover;
   margin-top: 10px;
 }
+.Logo{
+  display: inline-block;
+  position: relative;
+  float: left;
+}
