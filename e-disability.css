@@ -15,3 +15,22 @@ body{
   position: relative;
   float: left;
 }
+.NamaLogo{
+  display: inline-block;
+  text-align: left;
+  margin:20px 30px 10px 10px;
+}
+#NamaLogo{
+  font-size:24pt ;
+  font-style: italic;
+}
+#Disability{
+  height: 100px;
+  width: 100px;
+  border-radius: 100%
+}
+#user{
+  height: 50px;
+  width: 50px;
+  border-radius: 100%
+}
