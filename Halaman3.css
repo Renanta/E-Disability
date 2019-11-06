@@ -13,7 +13,6 @@ a{
 }
 a:hover{
   color: black;
-  text-decoration:underline;
 }
 .Header{
   margin-top: 0px;
@@ -60,6 +59,11 @@ ul{
 .menubar li{
   float: left;
   padding: 10px;
+}
+#Comunity{
+  border:none;
+  border-bottom: solid 2px;
+  border-color: black;
 }
 .Sign{
   display: inline-block;
@@ -123,17 +127,35 @@ ul{
   height: 25px;
 }
 .Footer{
-  display: flex;
   padding:10px;
   width: 100%;
   background-color:rgb(62, 65, 71);
   color: white;
+}
+.flex{
+  display: flex;
   justify-content: space-between;
+}
+.footerjudul{
+  display: flex;
+  justify-content: space-between;
+}
+.Ikuti{
+  padding-right: 70px;
 }
 .Layanan{
   text-align: left;
+  display: flex;
+}
+#Hubungi li{
+  padding: 5px;
+}
+#akun li{
+  padding: 5px;
 }
 .Sosmed{
   padding-right: 20px;
   text-align: left;
+  display: flex;
 }
+.
