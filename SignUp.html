@@ -41,7 +41,7 @@
             <h2>Sign Up</h2>
           </div>
           <div class="LoginBody">
-            <form onsubmit="validasi">
+            <form name="SignUp" onsubmit="validasi">
               <label>Your Username</label>
               <input type="text" name="username" placeholder="Username" required id="username">
               <label>Your Email</label>
@@ -98,9 +98,9 @@
   </body>
     <script >
     function validasi() {
-      var username = document.getElementById("username").value;
-      var Email = document.getElementById('Email').value;
-      var password = document.getElementById("password").value;
+      var username = document.SignUp['SignUp']['username'].value;
+      var Email = document.SignUp['SignUp']['Email'].value;
+      var password = document.SignUp['SignUp']['password'].value;
       if (username != "" && Email!="" && password!="") {
         return true;
       }else{
