@@ -41,15 +41,15 @@
             <h2>Sign Up</h2>
           </div>
           <div class="LoginBody">
-            <form>
+            <form onsubmit="validasi">
               <label>Your Username</label>
-              <input type="text" name="username" placeholder="Username" required>
+              <input type="text" name="username" placeholder="Username" required id="username">
               <label>Your Email</label>
-              <input type="text" name="email" placeholder="Email" required>
+              <input type="text" name="email" placeholder="Email" required id="Email">
               <label>Your Password</label>
-              <input type="password" name="password" placeholder="Password" required>
+              <input type="password" name="password" placeholder="Password" required id="password">
               <label>Confirm your Password</label>
-              <input type="password" name="password" placeholder="Password" required>
+              <input type="password" name="password" placeholder="Password" required id="password">
               <input type="submit" name="login" value="SIGN UP"><br>
             </form>
             <h4>Already a member ? <a href="SignIn.html">Sign In</a></h4>
@@ -96,4 +96,17 @@
         </div>
 
   </body>
+    <script >
+    function validasi() {
+      var username = document.getElementById("username").value;
+      var Email = document.getElementById('Email').value;
+      var password = document.getElementById("password").value;
+      if (username != "" && Email!="" && password!="") {
+        return true;
+      }else{
+        alert('Mohon Lengkapi Data Anda');
+      }
+    }
+  </script>
+
 </html>
