@@ -13,7 +13,6 @@ a{
 }
 a:hover{
   color: black;
-  text-decoration:underline;
 }
 .Header{
   margin-top: 0px;
@@ -61,6 +60,11 @@ ul{
   float: left;
   padding: 10px;
 }
+#About{
+  border:none;
+  border-bottom: solid 2px;
+  border-color: black;
+}
 .Sign{
   display: inline-block;
   text-align: right;
@@ -78,11 +82,12 @@ ul{
   margin:10px 20px 10px 10px;
 }
 p{
-  border: solid rgb(144, 144, 144) ;
+  border: solid rgba(144, 144, 144,) ;
   border-radius: 5px;
-  background-color: rgb(144, 144, 144);
+  background-color: rgb(144, 144, 144, 0.7);
   font-size: 14pt;
   text-align: center;
+  font-weight: bold;
   width:50%;
   margin: auto;
   margin-top: 50px;
@@ -106,18 +111,39 @@ p{
 
 /* Footer */
 
+.Footer img{
+  width: 25px;
+  height: 25px;
+}
 .Footer{
-  display: flex;
   padding:10px;
   width: 100%;
   background-color:rgb(62, 65, 71);
   color: white;
+}
+.flex{
+  display: flex;
   justify-content: space-between;
+}
+.footerjudul{
+  display: flex;
+  justify-content: space-between;
+}
+.Ikuti{
+  padding-right: 70px;
 }
 .Layanan{
   text-align: left;
+  display: flex;
+}
+#Hubungi li{
+  padding: 5px;
+}
+#akun li{
+  padding: 5px;
 }
 .Sosmed{
   padding-right: 20px;
   text-align: left;
+  display: flex;
 }
